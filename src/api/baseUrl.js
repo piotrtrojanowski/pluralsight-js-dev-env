@@ -1,5 +1,6 @@
 export default function getBaseUrl() {
-	return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+//	return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+	return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://warm-bastion-48316.herokuapp.com/';
 }
 
 

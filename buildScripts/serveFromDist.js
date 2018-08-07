@@ -15,6 +15,9 @@ http_server.get('/', function(req, res) {
 	res.sendFile (path.join(__dirname, '//../dist/index.html'));
 });
 
+/*
+// This serves getUsers API from a local running express server.
+// Can be commented out when the API is served from a real web server - in this tutorial Heroku is used
 http_server.get('/users', function(req,res) {
 	res.json([
 		{"id": 1, "firstName":"Bob", "lastName":"Smith","email":"bob@gmail.com"},
@@ -22,6 +25,9 @@ http_server.get('/users', function(req,res) {
 		{"id": 3, "firstName":"Sen", "lastName":"Siem","email":"sen@gmail.com"}
 	]);
 });
+*/
+
+
 
 http_server.listen(port, function(err) {
 	if (err) {
